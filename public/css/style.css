@@ -1,0 +1,111 @@
+body{
+    padding: 0;
+    margin: 0; 
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./../src/img/pokemonBg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 10px 20px;
+}
+
+.perso{
+    height: 70px;
+    width: 250px;
+    background-color:#051632;
+    color: white;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(39, 37, 37);
+    transition: 0.2s;
+    cursor: pointer;  
+}
+
+.perso:hover{
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px white, inset 0px 0px 10px white;
+}
+
+.perso .left{
+    height: 100%;
+    width: 90px;
+    background-color: #fef1bc;
+}
+
+.menu:nth-child(1) .perso .left{
+    background-image: url(./../src/img/carapuce.png);
+    background-size: cover;
+
+}
+.menu:nth-child(2) .perso .left{
+    background-image: url(./../src/img/pikachu.png);
+    background-size: cover;
+
+}
+.menu:nth-child(3) .perso .left{
+    background-image: url(./../src/img/salameche.png);
+    background-size: cover;
+
+}
+.menu:nth-child(4) .perso .left{
+    background-image: url(./../src/img/bulbizare.png);
+    background-size: cover;
+
+}
+
+.perso .right{
+    width: 200px;
+    font-size: 0.8em;
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+.persoBg{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0;
+    left: 10%;
+   
+}
+
+.logoMenu{
+    height: 300px;
+    display: none;
+}
+
+.lanceLeCombat{
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.btnLancerLeCombat{
+    height: 60px;
+    width: 250px;
+    font-weight: 900;
+    color: white;
+    background-color:#051632;
+    border: 2px solid rgb(39, 37, 37);
+    transition: 0.2s;
+    cursor: pointer;  
+}
+
+.btnLancerLeCombat:hover{
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px white, inset 0px 0px 10px white;
+}
+
