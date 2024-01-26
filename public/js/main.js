@@ -42,6 +42,7 @@ carapuce.addEventListener("click", () =>{
     logoBulbizare.style.display = "none";
 })
 
+
 let logoPikachu = document.querySelectorAll(".logoMenu")[1];
 let pikachu = document.querySelectorAll(".perso")[1];
 pikachu.addEventListener("click", () =>{
@@ -69,22 +70,14 @@ bulbizare.addEventListener("click", () =>{
     logoSalameche.style.display = "none";
 })
 
-
-// let btnLancerLeCombat = document.querySelectorAll(".btnLancerLeCombat")[0]
-// btnLancerLeCombat.addEventListener("mouseover", () => {
-//     btnLancerLeCombat.style.border = "2px solid white"
-//     btnLancerLeCombat.style.boxShadow = "0px 0px 10px white, inset 0px 0px 10px white"
+let fight = document.querySelector(".fight")
+let container = document.querySelector(".container")
+let btnLancerLeCombat = document.querySelector(".btnLancerLeCombat")
+btnLancerLeCombat.addEventListener("click", () => {
+    container.style.display = "none"
+    fight.style.display = "flex"
     
-// })
+})
 
 
 
-
-// let choixDePersonnage = prompt(`Choisis ton pokemon ! entrer 1 pour ${carapuce.nom} ou tape 2 pour ${bulbizare.nom}`)
-// if (choixDePersonnage == "1") {
-//     console.log(`Ton pokemon est ${carapuce.nom}`);
-// } else if (choixDePersonnage == "2"){
-//     console.log(`Ton pokemon est ${bulbizare.nom}`);
-// } else{
-//     console.log(`erreur il faut choisir entre 1 et 2`);
-// }
