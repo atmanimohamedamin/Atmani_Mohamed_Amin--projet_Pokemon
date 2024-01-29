@@ -13,6 +13,8 @@ body{
     position: relative;
 }
 
+
+
 .menu{
     display: flex;
     align-items: center;
@@ -38,28 +40,37 @@ body{
 
 .perso .left{
     height: 100%;
-    width: 90px;
+    width: 100px;
     background-color: #fef1bc;
 }
 
 .menu:nth-child(1) .perso .left{
-    background-image: url(./../src/img/carapuce.png);
-    background-size: cover;
+    background-image: url(./../src/img/squirtle.gif);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 
 }
 .menu:nth-child(2) .perso .left{
-    background-image: url(./../src/img/pikachu.png);
-    background-size: cover;
+    background-image: url(./../src/img/pikachu.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 .menu:nth-child(3) .perso .left{
-    background-image: url(./../src/img/salameche.png);
-    background-size: cover;
+    background-image: url(./../src/img/charmander.gif);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 .menu:nth-child(4) .perso .left{
-    background-image: url(./../src/img/bulbizare.png);
-    background-size: cover;
+    background-image: url(./../src/img/bulbasaurGif.gif);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 
@@ -110,10 +121,81 @@ body{
 }
 
 .fight{
-    background-image: url(./../src/img/fightbg.jpg);
+    background-image: url(./../src/img/draw-a-pixel-pokemon-battle-background.gif);
     background-size: cover;
     background-position: 100%;
     height: 100vh;
     width: 100vw;
+    display: flex;
+    
+    
+
+}
+.leftFight{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+    
+}
+
+
+.rightFight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    left: 40%;
+}
+
+.logoFight{
+    height: 170px;
+    width: 220px;
+}
+
+.logoFightRight{
+    height: 80px;
+    width: 100px;
+}
+
+.backFight{
     display: none;
+}
+
+.faceFight{
+    display: none;
+}
+
+
+.barreDeVie{
+    height: 20px;
+    background-color: blue;
+}
+
+#pokemon1{
+    width: 100%;
+    background-color: green;
+}
+
+#pokemon2{
+    width: 100%;
+    background-color: red;
+}
+
+.divAttaque{
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 200px;
+    
+}
+
+.btnAttaque{
+    height: 75px;
+    width: 100px;
 }
